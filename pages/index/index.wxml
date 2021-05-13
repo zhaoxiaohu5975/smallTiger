@@ -1,184 +1,23 @@
 <!--index.wxml-->
-<view class="superview" style="height:{{Sheight}}px; width:{{Swidth}}px; ">
-  <scroll-view  scroll-y="true"  style="background-color:rgb(251, 96, 47);height:{{Sheight}}px; width:{{Swidth}}px; " >
-  <view class="swiper" style="height:{{height}}px; width:{{Swidth}}px">
- <swiper style="height:{{height}}px; width:{{width}}px" indicator-dots="true" autoplay="true"  duration="true" interval="5000" indicator-color="rgba(255,255,255,0.3)"  indicator-active-color="rgba(33,152,239,1)" duration="400">
-   <block wx:for="{{background}}" wx:key="*this">
-     <swiper-item>
-       <image class="swiper-img" src="{{item}}"></image>
-       <view class="swiper-itme {{item}}"></view>
-     </swiper-item>
-   </block>
- </swiper>
- <!-- 围观人数 -->
-  <view class="onlookers-card">
-    <text >则深美术原价480元课包狂拼12.12元,</text>
-    <text>一起来拼吧!</text>
-     <view class="onlookers-card-view" style="">
-      <view class="tui-countdown-content" >
-      剩余
-      <text class="tui-countdown-box">2</text>天
-      <text class="tui-countdown-box">12</text>时
-      <text class="tui-countdown-box">33</text>分
-      <text class="tui-countdown-box tui-countdow-bg">45</text>秒
-    </view>
-     </view>
-     <view class="img-card">
-       <view  wx:for="{{imggroup}}" wx:key="*this">
-        <image class="img" style="" src="{{item}}"></image>
-       </view>
-       <text>{{pepol}} 人正在围观</text>
-     </view>
-    <view class="spell-group" style=""></view>
-    <view class="spell-group-view" style="">
-      <swiper style="height:50px;"circular='true' autoplay='true' interval="4000" duration="400" vertical="true">
-      <block wx:for="{{bulklist}}" wx:key="*this">
-      <swiper-item>
-        <view class="peploview">
-      <view class="spell-group-img" style=" ">
-        <image src="{{item.image}}"></image>
-      </view >
-      <view class="spell-group-text" style="">
-        <text>{{item.name}}</text>
-        <text>{{item.title}}</text>
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
       </view>
-        <text  style="position:absolute;right:10px;top:20px;">{{item.time}}</text>
-    </view>
-      </swiper-item>
-      </block>
-    </swiper>
-    
-  
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
   </view>
-  <view class="mask-view"></view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
   </view>
-  <!-- 参加团队模块 -->
-  <view class="group-card" style="height:{{groupheight}}px;">
-    <view class="group-card-top" style="">
-      <view class="groid-card-top-view" style="" > <image class="groid-card-top-img" style="" src="{{cardinfo.image}}"></image></view>
-      <view class="groid-card-top-right">
-        <text class="title-text">{{cardinfo.title}}</text>
-        <text class="original-text">原价 ￥{{cardinfo.original}}</text>
-        <view class="price-view" style="">
-
-          <view class="price-left-view"> 
-          <text class="price-left-text1">￥{{cardinfo.price}}</text>
-          <text class="price-left-text2">{{cardinfo.num}}人团</text>
-        </view>
-         <view class="price-right-view">
-          <text class="price-right-text1">仅剩</text>
-          <text class="price-right-text2">{{cardinfo.inventory}}份</text>
-         </view>
-        </view>
-      </view>
-    </view>
-    <view class="card-center" style=" height:{{carheight}}px;">
-    <view class="card-center-more">
-      <text class="card-center-more-text1">{{num}} 人在拼团, 可直接参与</text>
-      <view class="card-center-more-view">
-         <text class="card-center-more-text2"> 更多</text>
-      <image style="top:1px; height:10px;width:5px;left:4px;position:relative" src="../../image/left_iconi.png"></image>
-    </view >
-     <view class="spell-group-card" wx:for="{{spellnum}}" wx:key="*this">
-       <view class="group-card-view1">
-        <view class="spell-group-view2">
-        <view class="group-card-view3">
-          <image src="{{item.image}}"></image>
-          <text>{{item.name}}</text>
-        </view>
-          <view class="group-card-view4">
-            <text>还差</text>
-            <text>{{item.num}}</text>
-            <text>人</text>
-         <button>掺加拼团</button>
-          </view>
-       </view>
-       </view>
-     </view>
-    </view>
-    </view>
-    <view class="card-buttom">
-      <button class="card-buttom-button">我要开团 仅需 {{cardinfo.price}} 元</button>
-    </view>
-  </view>
-  <!-- 发起团队模块 -->
-  <view class="tuxedo-card" style="height:{{tuxedoheight}}px;">
-  <view class="tuxedo-top">
-    <view class="tuxedo-top-left">
-      <view class="tuxedo-top-left-view"> <image src="{{img}}"></image></view>
-      <text>{{title}}的拼团</text>
-    </view>
-    <view class="tuxedo-top-right">
-      <image src="{{img}}"></image>
-      <text>全部团员</text>
-      <image src="../../image/left_iconi.png"></image>
-    </view>
-    
-  
-  </view>
-  <view class="tuxedo-card-top" style="">
-      <view class="groid-card-top-view" style="" > <image class="groid-card-top-img" style="" src="{{tuxedinfo.image}}"></image></view>
-      <view class="groid-card-top-right">
-        <text class="title-text">{{tuxedinfo.title}}</text>
-        <text class="original-text">原价 ￥{{tuxedinfo.original}}</text>
-        <view class="price-view" style="">
-
-          <view class="price-left-view"> 
-          <text class="price-left-text1">￥{{tuxedinfo.price}}</text>
-          <text class="price-left-text2">{{tuxedinfo.num}}人团</text>
-        </view>
-         <view class="price-right-view">
-          <text class="price-right-text1">仅剩</text>
-          <text class="price-right-text2">{{tuxedinfo.inventory}}份</text>
-         </view>
-        </view>
-      </view>
-    </view>
-    <view class="card-center" style=" height:{{cardheight}}px;">
-    <view class="card-center-more">
-      <text class="card-center-more-text1">{{num}} 人在拼团, 可直接参与</text>
-      <view class="card-center-more-view">
-         <text class="card-center-more-text2"> 更多</text>
-      <image style="top:1px; height:10px;width:5px;left:4px;position:relative" src="../../image/left_iconi.png"></image>
-    </view >
-     <view class="spell-group-card" wx:for="{{cardnum}}" wx:key="*this">
-       <view class="group-card-view1">
-        <view class="spell-group-view2">
-        <view class="group-card-view3">
-          <image src="{{item.image}}"></image>
-          <text>{{item.name}}</text>
-        </view>
-          <view class="group-card-view4">
-            <text>还差</text>
-            <text>{{item.num}}</text>
-            <text>人</text>
-         <button>掺加拼团</button>
-          </view>
-       </view>
-       </view>
-     </view>
-    </view>
-    </view>
-    <view class="card-buttom">
-      <button class="card-buttom-button">立即参加{{title}}的团 仅需 {{tuxedinfo.price}} 元</button>
-    </view>
-  </view>
-  <!-- 课程介绍 -->
-  <view class="course-card">
-    <view class="course-image">
-    <image src="../../image/1.jpg"></image>
-    <image src="../../image/2.jpg"></image>
-    <image src="../../image/3.jpg"></image>
-    <image src="../../image/4.jpg"></image>
-    <image src="../../image/5.jpg"></image>
-    <image src="../../image/6.jpg"></image>
-    </view>
-
-  </view>
-  <!-- 公司简介 -->
-  <!-- <view class="introduce-card"></view> -->
-  </view>
-</scroll-view>
 </view>
-
-
