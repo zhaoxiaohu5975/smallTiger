@@ -1,34 +1,532 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.superview{
+   height: 300px;
+   width: 100px;
+
 }
 
-.container{
-  background-color: blueviolet;
+.swiper{
+  position: relative;
+
+  top: 0px;
+
+}
+.swiper-img {
+  width: 100%;
+  height: 100%;
+}
+
+.onlookers-card{
+  width: 95%;
+position: relative;
+  left: 2.5%;
+  top: 10px;
+  height: 205px;
+  display: inline-block ;
+  padding-top: 20px;
+  border-radius: 3.5%;
+  background-color: rgb(254, 198, 25);
+}
+.onlookers-card-view{
+  height:70px;
   display: flex;
+  justify-content: center;
+}
+.onlookers-card text{
+  display: block;
+  color: #fff;
+  font: 18px sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.group-card{
+  width: 95%;
+  position: relative;
+  left: 2.5%;
+  top: 20px;
+  height: 355px;
+  border-radius: 3.5%;
+  background-color: white;
+}
+
+.tui-countdown-content{
+ height: 50px;
+ display: inline-flex;
+ align-items:center;
+ position: relative;
+ line-height: 50px;
+top: 10px;
+ padding: 0 15px;
+ font-size: 15px;
+
+}
+.tui-countdown-box{
+height: 26px;
+width: 26px;
+position: relative;
+background-color: #000;
+color:#fff;
+margin:0 5px;
+
+}
+.tui-countdown-bg{
+background-color: #DF0101;
+}
+.img-card{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  left: 6px;
+  position: relative;
+}
+.img{
+  width:20px; margin-left: 3px;height:20px;border-radius: 50%;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  height: 20px;
+}
+.img-card text {
+  font-size: 12px;
+  right: 16px;
+  position: absolute;
+  color: #fff;
+}
+
+.peploview{
+  position: in;
+  height: 100px;
+  width: 100%;
+  display: inline-flex;
+   justify-items: center;
+
+}
+
+.peploview image{
+height: 30px;
+width: 30px;
+position: relative;
+top: 2px;
+left: 2px;
+
+border-radius: 50%; 
+}
+
+.peploview text{
+  font-size: 11px;
+  text-align: left;
+  top: 10px;
+  justify-items: center;
+  position: relative;
+}
+
+.spell-group{
+  height:0.5px;
+  background-color:rgba(255,255,255,0.3);
+   position: relative;top:7px;
+   margin-left:10px;
+   margin-right:10px;
+}
+
+.mask-view{
+  height: 50px;
+  top: -40px;
+  position: relative;
+
+}
+.spell-group-view{
+  top:9px; position: relative; height:50px;
+  
+}
+
+.spell-group-img{
+  position:relative;width:34px;height:34px;top:8px;left:8px; background-color:#fff;border-radius: 50%;
+}
+
+.spell-group-text{
+  width:140px;position:relative;left:11px; height:50px;display: block;
+}
+
+.groid-card-top-view{
+  display:inline;
+
+}
+.groid-card-top-img{
+  width:80px;height:80px; border-radius: 3.5%;
+  position:absolute;
+  top:10px;left:10px
+}
+.groid-card-top-right{
+  height: 90px;
+  left: 100px;
+  top: 15px;
+  right: 10px;
+  bottom: 5px;
+  position: absolute;
+
+}
+.title-text{
+  font-size: 16px;
+  display: block;
+
  
 }
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  background-color: yellow;
-  border-radius: 50%;
+.original-text{
+  font-size: 12px;
+  top: -5px;
+  text-decoration:line-through;
+  color: rgba(0,0,0,0.4);
+  position: relative;
+
+  
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.price-view{
+  top: -10px;
+  position: relative;
+
 }
-.supview{
-  position: fixed;
-  top: 0px;
-  background-color:red;
+.price-left-view{
+  position: absolute;
+display: inline;
+top: -4px;
+
+}
+
+.price-right-view{
+position: absolute;
+display: inline;
+top: -4px;
+right: 1px;
+
+
+}
+
+.price-left-text1{
+font-size: 15px;
+font-weight:900;
+color: rgb(228, 83, 96);
+}
+.price-left-text2{
+  left: 3px;
+  position: relative;
+background-color:rgb(231, 82, 83);
+border-radius: 2px;
+color: white;
+padding: 1px;
+padding-left: 3px;
+padding-right: 3px;
+font-size: 11px;
+}
+
+.price-right-text1{
+font-size: 11px;
+color: rgba(0,0,0,0.3);
+}
+
+.price-right-text2{
+  position: relative;
+  font-size: 11px;
+  left: 3px;
+  color: red;
+
+}
+
+.group-card-top{
+
+  height: 100px;
+}
+.card-center{
+
+  height: 155px;
+  margin: 10px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+.card-buttom{
+  height: 80px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+.card-buttom-button{
+  height: 40px;
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  top: 15px;
+  background-color:rgb(254, 201, 35);
+  color: #fff;
+  font-weight:900;
+
+}
+.card-center-more{
+height: 30px;
+position: relative;
+}
+
+.card-center-more-view{
+
+  display: inline;
+  position: absolute;
+  right: 10px;
+}
+.card-center-more-text1{
+font-size: 11px;
+position: relative;
+display: inline;
+color: rgba(0,0,0,0.8);
+left: 10px;
+}
+
+.card-center-more-text2{
+  font-size: 11px;
+  color: rgba(0,0,0,0.3);
+  position: relative;
+ 
+  }
 
 
 
-}
-.usermotto {
-  margin-top: 200px;
-}
+  .spell-group-card{
+    display: block;
+     position: relative;
+     top: 5px;
+  }
+ 
+
+  .group-card-view1{
+
+    height: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-top:0.5px solid rgba(0,0,0,0.3);
+  
+
+  }
+
+  .spell-group-view2{
+
+    height: 40px;
+    display: block;
+  }
+  .group-card-view3{
+    height: 40px;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+
+  }
+
+  .group-card-view4{
+ 
+    display: inline;
+    position: absolute;
+    right: 1px;
+
+
+  }
+  .group-card-view3 image{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px ;
+    border-radius: 50%;
+  }
+
+  .group-card-view3 text:nth-child(2){
+    font-size: 11px;
+    position: relative;
+    left: 5px;
+    top: -4px;
+  }
+  .group-card-view4 text{
+    font-size: 11px;
+    position: relative;
+    top: 9px;
+    left: -10px;
+    display:inline-block;
+
+  }
+
+  .group-card-view4 text:nth-child(2){
+   color: red;
+
+  }
+
+
+  .group-card-view4 button{
+    color: white;
+    width: 70px;
+    height: 25px;
+    top: 8px;
+    right: 5px;
+    background-color: rgb(238, 68, 72);
+    display:inline-block;
+    font-size: 10px;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .tuxedo-card{
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 55px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 3.5%;
+    background-color: white;
+  }
+
+  .tuxedo-top{
+    height: 50px;
+
+    /* background-color: red; */
+  }
+
+  .tuxedo-top-left{
+    height: 50px;
+    width: 50%;
+    display: inline-block;
+    /* background-color: darkcyan; */
+  }
+
+  .tuxedo-top-left-view{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    top: -20px;
+    display: inline-block;
+
+  }
+  .tuxedo-top-left image{
+   height: 40px;
+   width: 40px;
+   position: relative;
+   top: 5px;
+   left: 5px ;
+   border-radius: 20px;
+
+
+  }
+
+  .tuxedo-top-left text{
+  font-size: 12px;
+  position: relative;
+  top: -15px;
+  left: 10px;
+  /* background-color: violet; */
+  }
+  .tuxedo-top-right{
+    display: inline;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /* background-color:forestgreen; */
+  }
+
+  .tuxedo-top-right image:nth-child(1){
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 4px;
+    border-radius: 50%;
+    left: -15px;
+  }
+  .tuxedo-top-right image:nth-child(3){
+    height: 10px;
+    width: 5px;
+    right: 3px;
+  }
+  .tuxedo-top-right text{
+    font-size: 11px;
+    position: relative;
+    right: 5px;
+    top: -1px;
+    color: rgba(0,0,0,0.3);
+  }
+
+
+  .tuxedo-card-top{
+    position: relative;
+    height: 100px;
+  }
+  .course-card{
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 65px;
+    height: 5100px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+
+
+  .course-image{
+   display: block;
+   position: relative;
+    width: 95%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+    height: 5050px;
+
+
+  }
+  .course-image image{
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .course-image image:nth-child(1){
+    top: 70px; 
+    height: 200px;
+    border-radius: 5px;
+
+  }
+  .course-image image:nth-child(2){
+    top: 350px; 
+    height: 500px;
+
+
+  }
+  .course-image image:nth-child(3){
+    top: 850px; 
+    height: 600px;
+
+
+  }
+  .course-image image:nth-child(4){
+    top: 1450px; 
+    height: 700px;
+
+
+  }
+  .course-image image:nth-child(5){
+    top: 2150px; 
+    height: 1050px;
+
+
+  }
+  .course-image image:nth-child(6){
+    top: 3200px; 
+    height: 1800px;
+
+
+  }
+  .introduce-card{
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+    top: 75px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+  }
