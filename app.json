@@ -6,9 +6,9 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "哈哈国际",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
+
   "sitemapLocation": "sitemap.json"
 }
