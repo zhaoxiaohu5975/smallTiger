@@ -175,10 +175,24 @@
     </view>
 
   </view>
-  <!-- 公司简介 -->
-  <!-- <view class="introduce-card"></view> -->
+
   </view>
+  <!-- 广播视图 -->
+  <view class="radioView">
+    <image src="{{radioimg}}"></image>
+    <text>{{radioname}}</text>
+    <text>{{radiotitle}}</text>
+  </view>
+  <view class="postersView">
+    <view></view>
+      <view><text>海报</text> </view>
+  </view>
+
+  <view class="LinkView"> <text>联系商家</text></view>
+  <!-- 开团按钮 -->
+  <button class="clickBtn">我要开团</button>
 </scroll-view>
+
 </view>
 
 

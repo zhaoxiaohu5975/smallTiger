@@ -27,7 +27,12 @@ Page({
     spellnum:[{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'小蘑菇',num:'2'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'李晓彤',num:'1'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'宋针',num:'1'}],
     cardnum:[{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'王亚兰',num:'3'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'林小茹',num:'2'}],
     img:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.aiimg.com%2Fuploads%2Fuserup%2F0909%2F2Z64022L38.jpg&refer=http%3A%2F%2Fimg.aiimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=cf79e9237a7082356ca39aede3968a6d',
-    title:'林潇潇'
+    title:'林潇潇',
+
+    radioimg:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01176f5a9abad1a801206d96a55f4e.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623044356&t=9639a0b04407e5fd9fcefb3c49c55e77',
+    radioname:'小苹果',
+    radiotitle:'参加了灵犀的团'
+
   },
   // 事件处理函数
   bindViewTap() {
