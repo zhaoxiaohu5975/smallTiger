@@ -191,6 +191,21 @@
   <view class="LinkView"> <text>联系商家</text></view>
   <!-- 开团按钮 -->
   <button class="clickBtn">我要开团</button>
+<!-- 联系商家详情页面 -->
+  <view class="addressView">
+    <image class="addressDel" src="../../image/del.jpg"></image>
+    <view class="addressTopView"> <text>该活动总共有  </text> <text>{{pelpor}}</text> <text>  个门店参加</text></view>
+    <view class="addressBoder">
+      <image></image>
+      <text>{{adder_name}}</text>
+      <text>地址：</text>
+      <text>{{adder_detail}}</text>
+      <text>电话：</text>
+      <text>{{adder_phone}}</text>
+
+      
+    </view>
+  </view>
 </scroll-view>
 
 </view>

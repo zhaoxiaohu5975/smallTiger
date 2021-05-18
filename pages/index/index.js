@@ -31,8 +31,8 @@ Page({
 
     radioimg:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01176f5a9abad1a801206d96a55f4e.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623044356&t=9639a0b04407e5fd9fcefb3c49c55e77',
     radioname:'小苹果',
-    radiotitle:'参加了灵犀的团'
-
+    radiotitle:'参加了灵犀的团',
+    pelpor: '1'
   },
   // 事件处理函数
   bindViewTap() {
