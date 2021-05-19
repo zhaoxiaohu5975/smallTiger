@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="superview" style="height:{{Sheight}}px; width:{{Swidth}}px; ">
-  <scroll-view  scroll-y="true"  style="background-color:rgb(251, 96, 47);height:{{Sheight}}px; width:{{Swidth}}px; " >
+  <scroll-view  scroll-y="true"  style="background-color:rgb(251, 96, 47);height:{{Sheight}}px; width:{{Swidth}}px; " bindscroll="scrollgo" >
   <view class="swiper" style="height:{{height}}px; width:{{Swidth}}px">
  <swiper style="height:{{height}}px; width:{{width}}px" indicator-dots="true" autoplay="true"  duration="true" interval="5000" indicator-color="rgba(255,255,255,0.3)"  indicator-active-color="rgba(33,152,239,1)" duration="400">
    <block wx:for="{{background}}" wx:key="*this">
@@ -178,7 +178,7 @@
 
   </view>
   <!-- 广播视图 -->
-  <view class="radioView">
+  <view class="radioView" animation='{{radioAnimation}}' bindtransitionend='animationend'>
     <image src="{{radioimg}}"></image>
     <text>{{radioname}}</text>
     <text>{{radiotitle}}</text>
@@ -188,24 +188,25 @@
       <view><text>海报</text> </view>
   </view>
 
-  <view class="LinkView"> <text>联系商家</text></view>
+  <view class="LinkView" bindtap="addressTap"> <text>联系商家</text></view>
   <!-- 开团按钮 -->
-  <button class="clickBtn">我要开团</button>
+  <button class="clickBtn" style="opacity:{{number}}" animation='{{  animationBtn}}'>我要开团</button>
 <!-- 联系商家详情页面 -->
-  <view class="addressView">
-    <image class="addressDel" src="../../image/del.jpg"></image>
+  <view class="addressView   " hidden='{{addresBool}}'>
+    <image class="addressDel" bindtap="addressHidder" src="../../image/del.jpg"></image>
     <view class="addressTopView"> <text>该活动总共有  </text> <text>{{pelpor}}</text> <text>  个门店参加</text></view>
-    <view class="addressBoder">
-      <image></image>
+    
+  </view>
+  <view class="addressBoder "  animation='{{animationData}}'>
+      <image  src="../../image/11.jpg"></image>
       <text>{{adder_name}}</text>
       <text>地址：</text>
       <text>{{adder_detail}}</text>
       <text>电话：</text>
       <text>{{adder_phone}}</text>
-
-      
+      <text>导航</text>
+      <text>拨号</text>
     </view>
-  </view>
 </scroll-view>
 
 </view>

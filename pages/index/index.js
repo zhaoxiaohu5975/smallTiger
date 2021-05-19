@@ -22,7 +22,7 @@ Page({
     cardinfo:{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01176f5a9abad1a801206d96a55f4e.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623044356&t=9639a0b04407e5fd9fcefb3c49c55e77',title:'则深美术 专业课程 (素描, 色彩) 等体验课程2节',original:'600',price:'22.22',num:'2',inventory:'15'},
     tuxedinfo:{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',title:'则深美术 3-11岁综合艺术体验课程2节',original:'480',price:'12.12',num:'2',inventory:'22'},
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    bulklist:[{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'}],
+    bulklist:[{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'小苹果',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'林小夕',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'邹媛媛',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'袁青',title:'参加了董小琴的团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'何思云',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'张晓丽',title:'掺加了何倩的团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'云文字',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'何丽丽',title:'发起了拼团',time:'2020-12-09 08:53'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2F1812.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2009%2F11%2F18%2F18%2F8%2F125b6560a6ag214.jpg&refer=http%3A%2F%2F1812.img.pp.sohu.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895055&t=3a9b1c0d33e153337ad455d2d8d0c26f',name:'邹小清',title:'参加了袁兵兵的团',time:'2020-12-09 08:53'}],
     num:'1',
     spellnum:[{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'小蘑菇',num:'2'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'李晓彤',num:'1'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'宋针',num:'1'}],
     cardnum:[{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'王亚兰',num:'3'},{image:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fblog.sina.com.cn%2Fpic%2F44f59d727e4f484157caa&refer=http%3A%2F%2Fblog.sina.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1622895914&t=c64c558fb5bbeabcdf7349aeb11cbb04',name:'林小茹',num:'2'}],
@@ -32,14 +32,157 @@ Page({
     radioimg:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01176f5a9abad1a801206d96a55f4e.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1623044356&t=9639a0b04407e5fd9fcefb3c49c55e77',
     radioname:'小苹果',
     radiotitle:'参加了灵犀的团',
-    pelpor: '1'
+    pelpor: '1',
+    adder_name:'哈哈国际少儿艺术中心',
+    adder_detail:'海珠区逸景湾(怡乐东路)(海珠区怡乐东路23号意境湾二楼201室)',
+    adder_phone:'13807298882',
+    addresBool:true,
+    animationTime: '',
+    num: '1',
+    number: 0
+
   },
+ /**
+   * 启动动画
+   */
+ setAnimation : function() {
+  var that  =this;
+
+  that.data.animationTime  = setInterval( function() {
+
+    var animation = wx.createAnimation({
+      duration: 1000,
+      delay:100,
+    }) 
+      animation.opacity(0).step().opacity(1).step(),
+           
+      that.setData({
+      radioAnimation:animation.export() 
+
+      })
+
+  },4000);
+
+ 
+ },
+
+ animationend() {
+  
+  var that  =this;
+  var temp = that.data.bulklist;
+  if (that.data.num == '2'){
+    that.data.num = '1'
+  } else{
+    that.data.num = '2'
+    var inde =  Math.floor(Math.random()*temp.length);
+    var lib = temp[inde];
+    that.setData({
+     radioimg:lib.image,
+     radioname:lib.name,
+     radiotitle:lib.title
+    })
+  }
+  
+ },
+
+ scrollgo : function(e){
+   var that =this
+  if (e.detail.scrollTop >1250){
+    if (that.data.number == 1){
+      return
+    }
+    that.setData({
+      number : 1
+    })
+    var animation = wx.createAnimation({
+      duration: 200,
+      delay:100,
+    }) 
+      animation.opacity(1).step(),
+           
+      that.setData({
+        animationBtn :animation.export() 
+
+      })
+
+  }else{
+    if (that.data.number == 0){
+      return
+    }
+    that.setData({
+      number : 0
+    })
+    var animation = wx.createAnimation({
+      duration: 200,
+      delay:100,
+    }) 
+      animation.opacity(0).step(),
+           
+      that.setData({
+        animationBtn :animation.export() 
+
+      })
+  }
+
+
+
+ },
+  endInter: function(){
+    var that = this;
+    that.clearInterval(that.data.animationTime)
+  },
+
   // 事件处理函数
   bindViewTap() {
     wx.navigateTo({
       url: '../logs/logs'
     })
+  
   },
+  addressTap(event) {
+
+    this.setData({
+      addresBool : false,
+    
+
+    })
+
+    var animation = wx.createAnimation({
+      duration: 500,
+      timingFunction:'ease',
+    });
+    let  Swidth = wx.getSystemInfoSync().windowWidth
+    
+    animation.translateX(-Swidth).step(),
+    this.setData({
+
+      animationData : animation.export()
+
+    })
+    
+  },
+
+  addressHidder(event) {
+    var animation = wx.createAnimation({
+      duration: 1,
+
+      timingFunction:'ease',
+    });
+    let  Swidth = wx.getSystemInfoSync().windowWidth
+    
+    animation.translateX(Swidth).step(),
+    this.setData({
+
+      animationData : animation.export()
+
+    })
+
+    this.setData({
+      addresBool:true
+    })
+    
+  },
+
   onLoad() {
    
      let spelllist = this.data.spellnum
@@ -83,6 +226,9 @@ Page({
 
   },
   onShow:function(){
+    this.setAnimation()
+    //  this.startInter()
+     
     this.setData({
 
 
@@ -95,5 +241,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+   /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+    this.endInter()
+    
+  },
 })
