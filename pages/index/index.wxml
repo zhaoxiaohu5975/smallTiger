@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="superview" style="height:{{Sheight}}px; width:{{Swidth}}px; ">
-  <scroll-view  scroll-y="true"  style="background-color:rgb(251, 96, 47);height:{{Sheight}}px; width:{{Swidth}}px; " bindscroll="scrollgo" >
+  <scroll-view  scroll-y="true"  style="background-color:rgb(251, 96, 47);height:{{Sheight}}px; width:{{Swidth}}px; " bindscroll="scrollgo" enhanced ="true" binddragstart="scrollstart" binddragend="scrollend">
   <view class="swiper" style="height:{{height}}px; width:{{Swidth}}px">
  <swiper style="height:{{height}}px; width:{{width}}px" indicator-dots="true" autoplay="true"  duration="true" interval="5000" indicator-color="rgba(255,255,255,0.3)"  indicator-active-color="rgba(33,152,239,1)" duration="400">
    <block wx:for="{{background}}" wx:key="*this">
